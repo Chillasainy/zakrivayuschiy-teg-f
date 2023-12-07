@@ -6,7 +6,6 @@
   background-image: var(--background-image_gradient, #fff);
   background-size: cover;
   background-attachment: fixed;
-  min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "whgt" var(--text-fontweight, 400);
   inline-size: calc((700 / 1440) * 100%);
@@ -310,9 +309,9 @@
 
 .dialog__button {
   grid-area: button;
+  height: 38px;
   text-transform: uppercase;
   background-color: transparent;
-  height: 38px;
 }
 
 .dialog__button-image {
@@ -369,9 +368,8 @@
   }
 }
 
-
-@media (width > 1440px){
-  .page{
+@media (width > 1440px) {
+  .page {
     inline-size: 700px;
   }
 }
